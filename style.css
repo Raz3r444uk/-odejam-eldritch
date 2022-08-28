@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #424242;
+  font-family: "Opensans", sans-serif;
+  background-image: url("./eldritch-codejam/assets/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section__demons {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.demons-list {
+  display: flex;
+}
+
+.demons-list__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: rgb(77, 38, 38) 0px 20px 30px -10px;
+  color: #fff;
+  text-shadow: 3px 3px 20px #ff0000, -2px 1px 30px #ff0000;
+}
+
+.demons-list__item-title {
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.demons-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.azathoth {
+  background-image: url("./eldritch-codejam/assets/Ancients/Azathoth.jpg");
+}
+
+.cthulhu {
+  background-image: url("./eldritch-codejam/assets/Ancients/cthulhu.jpg");
+}
+.iogsothoth {
+  background-image: url("./eldritch-codejam/assets/Ancients/iogSothoth.jpg");
+}
+.shubniggurath {
+  background-image: url("./eldritch-codejam/assets/Ancients/shubNiggurath.jpg");
+}
+
+.demons-cards {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-shadow: none;
+}
+
+.demons-cards__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin: 2px;
+}
+
+.green {
+  color: black;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.yellow {
+  color: black;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.blue {
+  color: black;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.section__game-btns {
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: display 0.5s ease-in;
+}
+
+.btn {
+  min-width: 200px;
+  height: 50px;
+  width: 100%;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: rgb(77, 38, 38) 0px 20px 30px -10px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.btn-soeasy:hover {
+  background-color: #fcd3d3;
+  border: 2px solid white;
+}
+
+.btn-easy:hover {
+  background-color: #fca7a7;
+  border: 2px solid white;
+}
+
+.btn-middle:hover {
+  background-color: #f87e7e;
+  border: 2px solid white;
+}
+.btn-hard:hover {
+  background-color: #f84949;
+  border: 2px solid white;
+}
+.btn-sohard:hover {
+  background-color: #ff0000;
+  border: 2px solid white;
+}
+
+.section__start-btn:hover {
+  background-color: #ff0000;
+  border: 2px solid white;
+}
+
+.section__start {
+  display: none;
+  margin: 50px 0px;
+}
+
+.section__game-place {
+  display: none;
+}
+
+.stages {
+  border: 2px solid black;
+  box-shadow: rgb(77 38 38) 0px 20px 30px -10px;
+  border-radius: 15px;
+}
+
+.stages__list {
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+}
+
+.stages__list-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stage-two,
+.stage-one,
+.stage-three {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.background-close {
+  width: 300px;
+  height: 400px;
+  background-image: url("./eldritch-codejam/assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid black;
+  box-shadow: rgb(77, 38, 38) 0px 20px 30px -10px;
+  margin-right: 25px;
+}
+
+.background-open {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: 2px solid black;
+  box-shadow: rgb(77, 38, 38) 0px 20px 30px -10px;
+  margin-right: 25px;
+  border-radius: 15px;
+}

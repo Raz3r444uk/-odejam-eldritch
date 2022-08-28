@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section__demons">
+        <ul class="section__demons-list demons-list">
+          <li class="demons-list__item azathoth">
+            <h2 class="demons-list__item-title">Azathoth</h2>
+            <div class="demons-cards">
+              <div class="demons-cards__item">
+                Этап 1:
+                <span class="demons-cards__item green">1</span>
+                <span class="demons-cards__item yellow">2</span>
+                <span class="demons-cards__item blue">1</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 2:
+                <span class="demons-cards__item green">2</span>
+                <span class="demons-cards__item yellow">3</span>
+                <span class="demons-cards__item blue">1</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 3:
+                <span class="demons-cards__item green">2</span>
+                <span class="demons-cards__item yellow">4</span>
+                <span class="demons-cards__item blue">0</span>
+              </div>
+            </div>
+          </li>
+          <li class="demons-list__item cthulhu">
+            <h2 class="demons-list__item-title">Сthulhu</h2>
+            <div class="demons-cards">
+              <div class="demons-cards__item">
+                Этап 1:
+                <span class="demons-cards__item green">0</span>
+                <span class="demons-cards__item yellow">2</span>
+                <span class="demons-cards__item blue">2</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 2:
+                <span class="demons-cards__item green">1</span>
+                <span class="demons-cards__item yellow">3</span>
+                <span class="demons-cards__item blue">0</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 3:
+                <span class="demons-cards__item green">3</span>
+                <span class="demons-cards__item yellow">4</span>
+                <span class="demons-cards__item blue">0</span>
+              </div>
+            </div>
+          </li>
+          <li class="demons-list__item iogsothoth">
+            <h2 class="demons-list__item-title">IogSothoth</h2>
+            <div class="demons-cards">
+              <div class="demons-cards__item">
+                Этап 1:
+                <span class="demons-cards__item green">0</span>
+                <span class="demons-cards__item yellow">2</span>
+                <span class="demons-cards__item blue">1</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 2:
+                <span class="demons-cards__item green">2</span>
+                <span class="demons-cards__item yellow">3</span>
+                <span class="demons-cards__item blue">1</span>
+              </div>
+              <div class="demons-cards__item">
+                Этап 3:
+                <span class="demons-cards__item green">3</span>
+                <span class="demons-cards__item yellow">4</span>
+                <span class="demons-cards__item blue">0</span>
+              </div>
+            </div>
+          </li>
+          <li class="demons-list__item shubniggurath">
+            <h2 class="demons-list__item-title">Shubniggurath</h2>
+            <div class="demons-cards">
+              <div class="demons-cards__item">
+                Этап 1:
+                <div class="demons-cards__item green">1</div>
+                <div class="demons-cards__item yellow">2</div>
+                <div class="demons-cards__item blue">1</div>
+              </div>
+              <div class="demons-cards__item">
+                Этап 2:
+                <div class="demons-cards__item green">3</div>
+                <div class="demons-cards__item yellow">2</div>
+                <div class="demons-cards__item blue">1</div>
+              </div>
+              <div class="demons-cards__item">
+                Этап 3:
+                <div class="demons-cards__item green">2</div>
+                <div class="demons-cards__item yellow">4</div>
+                <div class="demons-cards__item blue">0</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section__game-btns">
+        <button class="game-btns btn btn-soeasy">Очень легкий уровень</button>
+        <button class="game-btns btn btn-easy">Легкий уровень</button>
+        <button class="game-btns btn btn-middle">Средний уровень</button>
+        <button class="game-btns btn btn-hard">Высокий уровень</button>
+        <button class="game-btns btn btn-sohard">Очень высокий уровень</button>
+      </div>
+      <div class="section__start">
+        <button class="btn section__start-btn">Начать игру!</button>
+      </div>
+      <div class="section__game-place">
+        <div class="background-close" data-tilt data-tilt-scale="1.1"></div>
+        <div class="background-open" data-tilt data-tilt-scale="1.1"></div>
+        <div class="stages">
+          <ul class="stages__list">
+            <li><h2 class="title">STAGE 1!</h2></li>
+
+            <li class="stages__list-item">
+              <div class="stage-one green stage-one__green"></div>
+              <div class="stage-one yellow stage-one__yellow"></div>
+              <div class="stage-one blue stage-one__blue"></div>
+            </li>
+            <li><h2 class="title">STAGE 2!</h2></li>
+
+            <li class="stages__list-item">
+              <div class="stage-two green stage-two__green"></div>
+              <div class="stage-two yellow stage-two__yellow"></div>
+              <div class="stage-two blue stage-two__blue"></div>
+            </li>
+            <li><h2 class="title">STAGE 3!</h2></li>
+            <li class="stages__list-item">
+              <div class="stage-three green stage-thre__green"></div>
+              <div class="stage-three yellow stage-three__yellow"></div>
+              <div class="stage-three blue stage-three__blue"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

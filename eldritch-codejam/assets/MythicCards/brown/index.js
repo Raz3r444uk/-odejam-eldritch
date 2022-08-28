@@ -1,0 +1,25 @@
+const brownCard = {
+  brown1: "./brown1.jpg",
+  brown2: "./brown2.jpg",
+  brown3: "./brown3.jpg",
+  brown4: "./brown4.jpg",
+  brown5: "./brown5.jpg",
+  brown6: "./brown6.jpg",
+  brown7: "./brown7.jpg",
+  brown8: "./brown8.jpg",
+  brown9: "./brown9.jpg",
+  brown10: "./brown10.jpg",
+  brown11: "./brown11.jpg",
+  brown12: "./brown12.jpg",
+  brown13: "./brown13.jpg",
+  brown14: "./brown14.jpg",
+  brown15: "./brown15.jpg",
+  brown16: "./brown16.jpg",
+  brown17: "./brown17.jpg",
+  brown18: "./brown18.jpg",
+  brown19: "./brown19.jpg",
+  brown20: "./brown20.jpg",
+  brown21: "./brown21.jpg",
+};
+
+export default brownCard;
