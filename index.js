@@ -362,6 +362,8 @@ let stageOne = [];
 let stageTwo = [];
 let stageThree = [];
 
+let stageOneGreeCards = [];
+
 const azathoth = document.querySelector(".azathoth");
 const cthulhu = document.querySelector(".cthulhu");
 const iogSothoth = document.querySelector(".iogsothoth");
@@ -377,6 +379,18 @@ const btnSohard = document.querySelector(".btn-sohard");
 const sectionGamePlace = document.querySelector(".section__game-place");
 const backgroundClose = document.querySelector(".background-close");
 const backgroundOpen = document.querySelector(".background-open");
+
+const stageOneGreen = document.querySelector(".stage-one__green");
+const stageOneBrown = document.querySelector(".stage-one__yellow");
+const stageOneBlue = document.querySelector(".stage-one__blue");
+
+const stageTwoGreen = document.querySelector(".stage-two__green");
+const stageTwoBrown = document.querySelector(".stage-two__yellow");
+const stageTwoBlue = document.querySelector(".stage-two__blue");
+
+const stageThreeGreen = document.querySelector(".stage-three__green");
+const stageThreeBrown = document.querySelector(".stage-three__yellow");
+const stageThreeBlue = document.querySelector(".stage-three__blue");
 
 function showLevels() {
   levelsContainer.style.display = "flex";
@@ -595,10 +609,6 @@ function cardsInside() {
         )
       );
     }
-
-    // console.log(brownCardsLevelStageOne);
-    // console.log(brownCardsLevelStageTwo);
-    // console.log(brownCardsLevelStageThree);
   } else if (level === "easy") {
     /* Greens */
     greenCardsLevelStageOne = cardsDataGreen
@@ -869,6 +879,12 @@ function cardsInside() {
     ...blueCardsLevelStageThree,
     ...brownCardsLevelStageThree,
   ];
+
+  stageOneGreeCards = [
+    ...greenCardsLevelStageOne,
+    ...greenCardsLevelStageTwo,
+    ...greenCardsLevelStageThree,
+  ];
 }
 
 function setCount() {
@@ -883,7 +899,6 @@ function getRandomNum(min, max) {
 
 function soEasyGame() {
   if (length) {
-    console.log(length);
     if (stage === "one") {
       if (stageOne.length) {
         let random = getRandomNum(0, stageOne.length);
@@ -1052,6 +1067,20 @@ function soHardGame() {
   }
 }
 
+function changeStartValue() {
+  stageOneGreen.textContent = greenCardsStageOne;
+  stageOneBrown.textContent = brownCardsStageOne;
+  stageOneBlue.textContent = blueCardsStageOne;
+
+  stageTwoGreen.textContent = greenCardsStageTwo;
+  stageTwoBrown.textContent = brownCardsStageTwo;
+  stageTwoBlue.textContent = blueCardsStageTwo;
+
+  stageThreeGreen.textContent = greenCardsStagethree;
+  stageThreeBrown.textContent = brownCardsStagethree;
+  stageThreeBlue.textContent = blueCardsStagethree;
+}
+
 // Events
 
 azathoth.addEventListener("click", () => {
@@ -1109,6 +1138,7 @@ btnSohard.addEventListener("click", () => {
 });
 
 btnStart.addEventListener("click", () => {
+  changeStartValue();
   sectionGamePlace.style.display = "flex";
 });
 
